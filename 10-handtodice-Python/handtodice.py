@@ -5,6 +5,8 @@
 # assert(handToDice(422) == (4,2,2))
 # Hint: You might find // and % useful here, and also getKthDigit().
 
-def handtodice(hand):
-	# your code goes here
-	pass
+def handtodice(hand):# your code goes here
+    firstDigit = hand // 100
+    secondDigit = (hand % 100) // 10
+    thirdDigit = (hand % 100) % 10
+    return firstDigit, secondDigit, thirdDigit
