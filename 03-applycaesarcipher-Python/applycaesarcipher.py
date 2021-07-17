@@ -9,7 +9,6 @@
 # assert(applyCaesarCipher("We Attack At Dawn", 1) == "Xf Buubdl Bu Ebxo")
 # assert(applyCaesarCipher("zodiac", -2) == "xmbgya")
 
-
 def fun_applycaesarcipher(msg, shift):
     cipher = ''
     for char in msg:
