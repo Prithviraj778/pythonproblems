@@ -15,5 +15,14 @@
 # assert(nth_happy_number(8) == 31)
 
 
-def nth_happy_number(n):
-	return 0
+def fun_nth_happy_prime(n):
+    found = 0
+    guess = 0
+    while (found <= n):
+        guess += 1
+        #print(guess)
+        if ((ishappynumber(guess)) and (isprime(guess))):
+            found += 1
+            #print(guess)
+    return guess
+
