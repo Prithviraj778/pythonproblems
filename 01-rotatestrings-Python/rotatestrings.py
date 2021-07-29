@@ -6,6 +6,8 @@
 
 
 
-def fun_rotatestrings(s, n):
-	return s
 
+def fun_rotatestrings(s, n):
+    n=n%len(s)
+    rotated= s[n:] + s[:n]
+    return rotated
