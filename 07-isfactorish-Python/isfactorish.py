@@ -20,10 +20,8 @@ def noofDigits(n):
 
 
 def fun_isfactorish(n):
-    
     if (n < 0):
         n = abs(n)
-	
     if(noofDigits(n) != 3 ):
         return False
     else:
