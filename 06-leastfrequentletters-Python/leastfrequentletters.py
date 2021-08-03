@@ -9,4 +9,13 @@
 
 def leastfrequentletters(s):
 	# Your code goes here
-	pass
+	t=s.lower()
+ 	h=""
+  	p=""
+	for i in t:
+		if(i.isalnum()):
+			h+=i
+	for j in h:
+		if(h.count(j)==1):
+			p+=j
+	return("".join(sorted(p)))
